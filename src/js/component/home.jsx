@@ -9,7 +9,7 @@ import yellow from "../../img/Yellow_circle.png";
 const Home = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const handleImageClick = (imageSrc) => {
+  const ImageClick = (imageSrc) => {
     setSelectedImage(imageSrc);
   };
 
@@ -28,7 +28,7 @@ const Home = () => {
                   src={green}
                   width="100"
                   height="100"
-                  onClick={() => handleImageClick(green)}
+                  onClick={() => ImageClick(green)}
                   style={{
                     filter:
                       selectedImage === green ? "brightness(500%)" : "none",
@@ -39,7 +39,7 @@ const Home = () => {
                   src={red}
                   width="90"
                   height="90"
-                  onClick={() => handleImageClick(red)}
+                  onClick={() => ImageClick(red)}
                   style={{
                     filter: selectedImage === red ? "brightness(500%)" : "none",
                   }}
@@ -49,7 +49,7 @@ const Home = () => {
                   src={yellow}
                   width="90"
                   height="90"
-                  onClick={() => handleImageClick(yellow)}
+                  onClick={() => ImageClick(yellow)}
                   style={{
                     filter:
                       selectedImage === yellow ? "brightness(500%)" : "none",
