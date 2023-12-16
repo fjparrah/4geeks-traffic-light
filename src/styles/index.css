@@ -10,3 +10,8 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.glow {
+    box-shadow: 0 0 10px #ffffff; /* Cambia el color y tamaño del brillo según necesites */
+    border-radius: 50%; /* Esto hará que el brillo sea redondo */
+  }
